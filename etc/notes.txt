@@ -1,0 +1,64 @@
+
+BSL
+https://services.arcgis.com/R0IGaIgf2sox9aCY/arcgis/rest/services/IL_Fabricv3_2_June2023BDC_EligibilityStatus/FeatureServer/13/query?f=geojson&where=1%3D1&outSR=3857&resultRecordCount=10&outFields=*
+
+https://services.arcgis.com/R0IGaIgf2sox9aCY/arcgis/rest/services/IL_BSLFile_2023_12_06_Final/FeatureServer/0/query?f=geojson&where=1=1&outSR=3857&resultRecordCount=10&outFields=*
+https://services.arcgis.com/R0IGaIgf2sox9aCY/arcgis/rest/services/IL_BSLFile_2023_12_06_Final/FeatureServer/0/query?f=geojson&where=1=1&outSR=3857&resultRecordCount=10&outFields=locationid as lid,address as addr,city,zipcode as zip,county,serviceability as service,enforceable_commitment as enforce,mdu
+
+CAI
+https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_CAI_CNServer_2023_11_30/FeatureServer/0/query?f=geojson&where=1%3D1&outSR=3857&resultRecordCount=10&outFields=*
+
+https://services.arcgis.com/R0IGaIgf2sox9aCY/arcgis/rest/services/IL_CAI_2023_12_06_Final/FeatureServer/1/query?f=geojson&where=1%3D1&outSR=3857&resultRecordCount=10&outFields=*
+
+https://services.arcgis.com/R0IGaIgf2sox9aCY/arcgis/rest/services/IL_CAI_2023_12_06_Final/FeatureServer/1/query?f=geojson&where=1%3D1&outSR=3857&outFields=locationid as lid,name,type,address as addr,city,zipcode as zip,county,eligibility as eligible,1000 as max_down,500 as max_up
+
+Location to Provider
+https://services.arcgis.com/R0IGaIgf2sox9aCY/arcgis/rest/services/IL_June2023BDC_LocationID_with_ProviderID/FeatureServer/22/query?f=pjson&outFields=*&resultRecordCount=10&outFields=*&where=1=1
+
+Provider
+https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_June2023BDC_Providers_with_ProviderID/FeatureServer/21/query?f=pjson&resultRecordCount=10&outFields=*&where=1=1
+
+
+
+
+
+Links to the layers published today
+ 
+BSL Layer Feature: https://cngis.maps.arcgis.com/home/item.html?id=5c22e7dd1c544ccfaa856c545d2603d3
+ 
+BSL Layer Tile: https://cngis.maps.arcgis.com/home/item.html?id=335d4e4d3fd84e848d5798a05cc1c7b6
+ 
+CAI Layer Feature: https://cngis.maps.arcgis.com/home/item.html?id=0178ae04bfea473b88d7a3fd75cfb9cb
+ 
+CAI Layer Tile: https://cngis.maps.arcgis.com/home/item.html?id=701fb05c663a44e38dd5b94c13104b5b
+
+
+
+Below are the decisions and questions from our meeting. Please let me know if I missed anything. I don’t have Devon’s email to include her.
+
+ 
+
+Localization (translation)
+Should we include?
+If so, which languages?
+Should we use AI translations or will you provide?
+Enforceable commitments
+We are using the program columns in the data to show. Do we need to account for speed, technology or anything else in the data?
+Local commitments will be added to the existing layer which is treated as a filter.
+Show program name in the hover over. 
+Data persistence
+Should we keep the browser persistence – when you return the selection you had will remain.
+Add a clear selection button.
+Submitted challenges clear the selection.
+Launch
+Don’t show Submit Challenge button on launch. IL will provide a date/time when it should be active.
+Remove or disable the button or show a message when someone clicks that you cannot submit a challenge until above date.
+Intro text?
+Twitter/social media card elements? 
+CAI
+Pass name and address for CAIs without a location ID.
+Data exchange
+CN will send example json
+U of Chicago to have a dev endpoint ready by next week.
+
+

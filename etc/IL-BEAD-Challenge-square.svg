@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <rect x="0" y="0" width="1200" height="1200" fill="#111a52"/>
+  <g transform="translate(-5, 410) scale(1.15)">
+    <image transform="translate(70, 20) scale(0.5)" href="./Illinois.webp"/>
+    <image transform="translate(352, 34) scale(1)" href="./IL-BB-Lab.webp"/>
+    <text x="325" y="248" style="fill: #fff; font: 60px sans-serif;">
+      Illinois BEAD Challenge
+    </text>
+  </g>
+</svg>

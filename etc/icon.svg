@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect fill="#111a52" x="0" y="0" width="512" height="512"/>
+  <image href="./IL-BB-Lab-164.webp" x="0" y="0" height="164" width="164"/>
+  <image href="./Illinois-164.webp" x="128" y="128" height="164" width="164"/>
+  <text x="120" y="100" style="fill: #fff; font: 96px sans-serif;">
+    Illinois
+  </text>
+  <text x="15" y="450" style="fill: #fff; font: 64px sans-serif;">
+    BEAD Challenge
+  </text>
+</svg>

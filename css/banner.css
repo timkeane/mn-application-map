@@ -1,0 +1,37 @@
+
+#banner {
+  z-index: 10;
+}
+
+.banner {
+  background: var(--cPrimary);
+  color: var(--cOnPrimary);
+  display: flex;
+  flex-flow: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  position: relative;
+  padding-inline-end: 3rem;
+}
+
+.banner h1, .banner img {
+  cursor: pointer;
+}
+
+.banner h1 {
+  margin: 0px;
+  color: var(--cOnPrimary);
+  font-size: 2rem;
+}
+
+.banner .dropdown {
+  position: absolute;
+  inset-inline-end: 15px;
+  inset-block-start: 15px;
+  max-height: 100px;
+}
+
+.banner .dropdown button {
+  inline-size: 100px;
+}
