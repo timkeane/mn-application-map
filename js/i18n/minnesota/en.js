@@ -1,5 +1,6 @@
 export const translation = {
   "app.title": "Line Extension Connection Program Round 4",
+  "app.type": "Selection",
   "app.desc": "Minnesota Line Extension Connection Program Round 4",
   "banner.state_seal.alt": "Minnesota State Logo",
   "tab.map.name": "Map",

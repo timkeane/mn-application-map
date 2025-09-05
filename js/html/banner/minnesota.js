@@ -3,5 +3,9 @@ export default `<div>
   <div class="logoState">
     <img src="img/minnesota/logo.jpg" data-i18n="[alt]banner.state_seal.alt">
   </div>
-  <h1 data-i18n="app.title"/>
+  <h1>
+    <span data-i18n="app.title"></span>
+    <br>
+    <span class="sub-heading" data-i18n="app.type"></span>
+  </h1>
 </div>`;
