@@ -128,19 +128,19 @@ then
   if [ "$invalidate_only" != "-i" ]
   then
     npm run build
-    aws s3 rm --recursive s3://$DEV_S3/$VITE_STATE/
-    aws s3 cp --recursive ./dist/ s3://$DEV_S3/$VITE_STATE/
+    aws s3 rm --recursive s3://$DEV_S3/$VITE_STATE/selection/
+    aws s3 cp --recursive ./dist/ s3://$DEV_S3/$VITE_STATE/selection/
   fi
-  aws cloudfront create-invalidation --distribution-id $DEV_CLOUDFRONT --paths "/$VITE_STATE*"
+  aws cloudfront create-invalidation --distribution-id $DEV_CLOUDFRONT --paths "/$VITE_STATE/selection*"
 elif [ $deploy == "prd" ]
 then
   if [ "$invalidate_only" != "-i" ]
   then
     npm run build
-    aws s3 rm --recursive s3://$PRD_S3/$VITE_STATE/
-    aws s3 cp --recursive ./dist/ s3://$PRD_S3/$VITE_STATE/
+    aws s3 rm --recursive s3://$PRD_S3/$VITE_STATE/selection/
+    aws s3 cp --recursive ./dist/ s3://$PRD_S3/$VITE_STATE/selection/
   fi
-  aws cloudfront create-invalidation --distribution-id $PRD_CLOUDFRONT --paths "/minnesota*"
+  aws cloudfront create-invalidation --distribution-id $PRD_CLOUDFRONT --paths "/minnesota/selection*"
 else
   echo "Invalid deployment target"
 fi
