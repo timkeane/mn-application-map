@@ -22,7 +22,7 @@
 }
 
 .ol-control button:focus,
-button.help:focus,
+a.help:focus,
 .ol-control button:focus {
   outline: none !important;
   background-color: var(--cSecondary);
@@ -31,7 +31,7 @@ button.help:focus,
 }
 
 .ol-control button:hover,
-button.help:hover,
+a.help:hover,
 .ol-control button:hover {
   box-shadow: 0 0 0 2px var(--cSecondary);
 }
@@ -58,7 +58,7 @@ button.ol-zoom-out,
 #popup-closer,
 button.attribution,
 button.select-button
-button.help {
+a.help {
   font-weight: bold;
   position: relative;
   grid-area: 1/2;
@@ -73,8 +73,13 @@ button.help {
   border-radius: 0.25rem !important;
 }
 
-button.help {
-  display: none !important;
+a.help {
+  border-radius: 0.25rem !important;
+  background:  var(--cPrimary);
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.75em;
 }
 
 button.ol-zoom-in,
@@ -154,7 +159,7 @@ div.ol-control.ol-attribution {
   max-width: calc(100% - 5em);
 }
 
-button.help {
+a.help {
   color: var(--cOnPrimary);
   position: absolute;
   right: 0.5em;

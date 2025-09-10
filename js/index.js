@@ -59,7 +59,7 @@ function load(restore) {
       });
       spin();
 
-      if (!hasStorage) showIntro();
+      // if (!hasStorage) showIntro();
     });
   });
 }

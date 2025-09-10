@@ -137,7 +137,7 @@ export function saveChallengesCsv() {
   const href = `data:text/csv;charset=utf-8,${getAsCsv()}`;
   const a = $('<a class="csv-download"><img></a>');
   $('body').append(a);
-  a.attr({href, download: `${getState()}-BEAD-challenge.csv`}).find('img').trigger('click');
+  a.attr({href, download: 'mn_line_extension_bid.csv'}).find('img').trigger('click');
   a.remove();
 }
 
