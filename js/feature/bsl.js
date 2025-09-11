@@ -3,7 +3,7 @@ import {getFeatureHtmlId, appendChallengeButton, getDistance, i18nAddress} from 
 
 export default function html(feature, type) {
   const id = getFeatureHtmlId(feature, type);
-  const locationId = feature.get('location_id') || 'Unknown';
+  const locationId = feature.get('locationid') || 'Unknown';
   const address = i18nAddress({
     name: feature.get('busname'),
     addr: feature.get('streetaddress'),

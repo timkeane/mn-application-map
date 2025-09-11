@@ -19,7 +19,7 @@ const papaConfig = {
 const geoJsonFormat = new GeoJSON({dataProjection: 'EPSG:3857'});
 
 function getCsvColumns() {
-  const csvColumns = ['FID_DO_NOT_EDIT', 'COORDINATE_DO_NOT_EDIT'];
+  const csvColumns = [];
   columns.forEach(column => {
     if (column.csv !== undefined) {
       csvColumns.push(column.csv);

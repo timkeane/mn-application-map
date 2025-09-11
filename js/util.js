@@ -142,14 +142,12 @@ export function getSpeed(props) {
 
 export const columns = [
   {},
-  {prop: 'name', name: 'table.column.name', csv:'NAME'},
-  {prop: 'streetaddress', name: 'table.column.addr', csv: 'ADDRESS'},
+  {prop: 'OBJECTID', name: 'table.column.objectid', csv:'OBD ID'},
+  {prop: 'streetaddress', name: 'table.column.addr', csv: 'Street Address'},
   {prop: 'city', name: 'table.column.city', csv: 'CITY'},
-  {prop: 'state', name: 'table.column.state', csv: 'STATE', value: 'MN'},
-  {prop: 'zipcode', name: 'table.column.zip', csv: 'ZIP'},
-  {prop: 'location_id', name: 'table.column.lid', csv: 'LOCATION_ID'},
-  {prop: 'apptype', name: 'table.column.type', csv: 'TYPE'},
-  {prop: 'speedtestup', name: 'table.column.max_up', csv: 'UPLOAD_SPEED'},
-  {prop: 'speedtestdown', name: 'table.column.max_down', csv: 'DOWNLOAD_SPEED'},
-  {prop: 'multunit', name: 'table.column.mdu', csv: 'MULTI_UNIT'}
+  {prop: 'county', name: 'table.column.county', csv: 'County'},
+  {prop: 'zipcode', name: 'table.column.zip', csv: 'Zip Code'},
+  {prop: 'locationid', name: 'table.column.lid', csv: 'Location ID'},
+  // {prop: 'apptype', name: 'table.column.type', csv: 'TYPE'},
+  // {prop: 'multunit', name: 'table.column.mdu', csv: 'MULTI_UNIT'}
 ];

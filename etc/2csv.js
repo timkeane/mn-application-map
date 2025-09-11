@@ -6,7 +6,7 @@ function csv(features) {
     const coord = feature.getGeometry().getCoordinates();
     rows.push({
       OBJECTID: props.OBJECTID,
-      location_id: props.location_id,
+      locationid: props.locationid,
       geometry: `POINT([${coord[0]},${coord[1]}])`,
       busname: props.busname,
       streetaddress: props.streetaddress,

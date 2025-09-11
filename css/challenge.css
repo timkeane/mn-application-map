@@ -130,21 +130,19 @@ div.challenge-table {
   max-width: 150px;
 }
 
-.challenge-table .city {
+.challenge-table .city,
+.challenge-table .county {
   min-width: 100px;
   max-width: 100px;
 }
 
-.challenge-table .state {
-  min-width: 55px;
-  max-width: 55px;
-}
 .challenge-table .zipcode {
   min-width: 60px;
   max-width: 60px;
 }
 
-.challenge-table .location_id {
+.challenge-table .OBJECTID,
+.challenge-table .locationid {
   min-width: 105px;
   max-width: 105px;
 }
@@ -153,6 +151,7 @@ div.challenge-table {
   min-width: 100px;
   max-width: 100px;
 }
+
 .challenge-table .apptype {
   min-width: 100px;
   max-width: 100px;

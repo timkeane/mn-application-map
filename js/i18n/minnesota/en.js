@@ -106,6 +106,7 @@ export const translation = {
   "table.column.zip": "ZIP Code",
   "table.column.county": "County",
   "table.column.lid": "Location ID",
+  "table.column.objectid": "OBD ID",
   "table.column.type": "Type",
   "table.column.eligible": "Eligiblity",
   "table.column.max_up": "Max Upload Speed",

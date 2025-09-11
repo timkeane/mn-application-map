@@ -100,7 +100,7 @@ function notFound(search) {
 function findFeature(locationId) {
   const source = getBslLayer().getSource();
   const features = source.getFeatures();
-  return features.find(feature => feature.get('location_id') == locationId);
+  return features.find(feature => feature.get('locationid') == locationId);
 }
 
 function handleSuggest(event) {

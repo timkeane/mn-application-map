@@ -1,4 +1,4 @@
-OBJECTID,location_id,geometry,busname,streetaddress,city,state,zipcode,apptype,multunit
+OBJECTID,locationid,geometry,busname,streetaddress,city,state,zipcode,apptype,multunit
 379,1029529469,"POINT([-10183398.14485339,6049651.993675668])",,10030 Jensen Trail,Isabella,MN,55607,Household,No
 795,1345973892,"POINT([-10220044.638505328,6088342.01835786])",,1146 Old Airport Road,"Ely ",MN,55731,Household,No
 5696,1345903145,"POINT([-10220902.273167389,6092278.966979616])","Cast Outdoor Adventures ",1270 Black Wolf Trail,Ely,MN,55731,Business,No
