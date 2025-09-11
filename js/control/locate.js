@@ -193,10 +193,10 @@ export function createLocator(map, restore) {
   const div = $('<div class="form-group search-map"><ul id="possible" class="list-group"></ul><button type="submit" class="btn btn-primary focus-ring" data-i18n="[aria-label]search"><div></div></button></div>');
   const input = $('<input type="text" class="form-control focus-ring" id="search" data-i18n="[placeholder]form.search.placeholder;[aria-label]form.search.placeholder">');
   const check = $('<input type="checkbox" class="form-check-input focus-ring" id="search-lid"><label for="search-lid" data-i18n="form.lid.label"></label>');
-  const download = $('<a href="/data/locations.json" download>Download all locations</a>');
+  // const download = $('<a href="/data/locations.json" download>Download all locations</a>');
   const possible = div.find('#possible');
 
-  form.append(div.prepend(input)).append(check).append(download).localize();
+  form.append(div.prepend(input)).append(check).localize();
   $('#tab-col').prepend(form);
 
   check.on('change', toggleSearchType);
