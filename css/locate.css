@@ -29,6 +29,15 @@
 
 #locate a {
   float: inline-end;
+  color: var(--cPrimary);
+  text-decoration: none;
+  margin-top: .25em;
+  cursor: pointer;
+}
+
+#locate a span {
+    transform: rotate(180deg);
+    display: inline-block;
 }
 
 .form-group.search-map button.btn.btn-primary div {
