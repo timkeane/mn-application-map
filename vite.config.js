@@ -23,8 +23,7 @@ export default defineConfig({
     cp({
       targets: [
         {src: 'img/*.*', dest: `./dist/img/`},
-        {src: `./data/*.json`, dest: './dist/data'},
-        {src: `./data/*.csv`, dest: './dist/data'},
+        {src: `./data/*.*`, dest: './dist/data'},
         {src: `./img/${state}`, dest: `./dist/img/${state}`}
       ]
     })
