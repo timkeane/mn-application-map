@@ -27,6 +27,10 @@
   box-shadow: 0 0 0 4px var(--cPrimary);
 }
 
+#locate a {
+  float: inline-end;
+}
+
 .form-group.search-map button.btn.btn-primary div {
   display: none;
 }
