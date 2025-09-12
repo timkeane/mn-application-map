@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import Papa from 'papaparse';
-import {getChallengeSource, columns, getState} from '../util';
+import {getChallengeSource, columns} from '../util';
 import GeoJSON from 'ol/format/GeoJSON';
 import Point from 'ol/geom/Point';
 import Feature from 'ol/Feature';

@@ -79,7 +79,6 @@ a.help {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  line-height: 1.75em;
 }
 
 button.ol-zoom-in,
@@ -160,14 +159,14 @@ div.ol-control.ol-attribution {
 }
 
 a.help {
-  color: var(--cOnPrimary);
-  position: absolute;
-  right: 0.5em;
-  bottom: 0.5em;
-  width: 29px;
-  height: 29px;
-  margin: 1px;
-  z-index: 2;
+    color: var(--cOnPrimary);
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.5em;
+    width: 1.75em;
+    z-index: 2;
+    font-size: 1.5em;
+    padding: 0.125em 0;
 }
 
 .select.ol-control {

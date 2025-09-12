@@ -15,9 +15,11 @@ export function viewAsTable(challenges, removeFunction) {
     const name = column.name;
     const prop = column.prop;
     const th = $(`<th class="${prop || ''}"></th>`);
-    headRow.append(th);
-    if (name !== undefined) {
-      th.attr('data-i18n', `${name};[title]${name}`);
+    if (name !== undefined || column.first) {
+      headRow.append(th);
+      if (!column.first) {
+        th.attr('data-i18n', `${name};[title]${name}`);
+      }
     }
   });
 
@@ -28,27 +30,19 @@ export function viewAsTable(challenges, removeFunction) {
     columns.forEach(column => {
       const prop = column.prop;
       const td = $(`<td class="${prop || ''}"></td>`);
-      const service = feature.get('service')?.toLowerCase();
-      if (prop === undefined) {
+      if (column.first) {
         const remove = $(`<img role="button" src="img/trash.svg" data-i18n="[alt]btn.remove_challenge.name;[title]btn.remove_challenge.name">`)
           .data('removeFunction', removeFunction)
           .data('feature', feature)
           .on('click', removeFunction)
           .on('click', removeRow);
         td.append(remove);
-      } else {
+        tr.append(td);
+      } else if (prop !== undefined) {
         const value = feature.get(prop) !== undefined ? feature.get(prop) : column.value;
-        if (prop === 'max_up' && service !== undefined) {
-        } else if (prop === 'max_down' && service !== undefined) {
-          td.addClass('provide');
-        } else if (column.decode && value !== undefined) {
-          const code = (`${value}`).toLowerCase();
-          td.attr('data-i18n', `feature.value.${code}`);
-        } else {
-          td.html(value).addClass(value === undefined ? 'empty' : '');
-        }
+        td.html(value).addClass(value === undefined ? 'empty' : '');
+        tr.append(td);
       }
-      tr.append(td);
     });
   });
 
@@ -63,11 +57,13 @@ export function viewAsTable(challenges, removeFunction) {
         container.attr('aria-hidden', false);
       });
     });
-  $(table.find('thead th').get(0)).append(button);
 
   div.append(table)
     .css('top', container.get(0).offsetTop + 'px');
+
   $('body').addClass('challenge-table').append(div);
+  $(table.find('thead th').get(0)).append(button);
+
   getTranslate().fadeOut();
   div.localize().slideDown(() => {
     const thead = table.find('thead');

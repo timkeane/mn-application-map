@@ -141,13 +141,20 @@ export function getSpeed(props) {
 }
 
 export const columns = [
-  {},
-  {prop: 'OBJECTID', name: 'table.column.objectid', csv:'OBD ID'},
+  {first: true},
+  {prop: 'locationid', name: 'table.column.lid', csv: 'Location ID'},
   {prop: 'streetaddress', name: 'table.column.addr', csv: 'Street Address'},
   {prop: 'city', name: 'table.column.city', csv: 'CITY'},
-  {prop: 'county', name: 'table.column.county', csv: 'County'},
   {prop: 'zipcode', name: 'table.column.zip', csv: 'Zip Code'},
-  {prop: 'locationid', name: 'table.column.lid', csv: 'Location ID'},
-  // {prop: 'apptype', name: 'table.column.type', csv: 'TYPE'},
-  // {prop: 'multunit', name: 'table.column.mdu', csv: 'MULTI_UNIT'}
+  {prop: 'county', name: 'table.column.county', csv: 'County'},
+  {csv: 'Broadband Provider Internal Bidding ID (Optional)'},
+  {csv: 'Group ID (Assigned by the bidder, if applicable)'},
+  {csv: 'Provider Funding Match'},
+  {csv: 'Proposed Bid/Grant Funding (may not exceed $25,000 per line extension.) '},
+  {csv: 'Total Project Funding'},
+  {csv: 'Technology'},
+  {csv: 'Fiber Miles'},
+  {csv: 'Maximum Download Speed to Location at Completion'},
+  {csv: 'Maximum Upload Speed to Location at Completion'},
+  {csv: 'Explanation of Need (Optional)'}
 ];

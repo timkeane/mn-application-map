@@ -26,20 +26,22 @@ function updateTab() {
 
 function handleChallengeSubmission(event) {
   event.preventDefault();
-  const form = event.target;
-  const source = getChallengeSource();
-  const features = source.getFeatures();
-  const submission = {cai: [], bsl: []};
-  features.forEach(feature => {
-    const lid = feature.get('lid');
-    if (feature.getId().indexOf('cai') > -1) {
-      submission.cai.push(lid);
-    } else {
-      submission.bsl.push(lid);
-    }
-  });
-  $(form).find('input[name="payload"]').val(JSON.stringify(submission));
-  form.submit();
+  window.open(import.meta.env.VITE_BOX_URL, '_blank').focus();
+
+  // const form = event.target;
+  // const source = getChallengeSource();
+  // const features = source.getFeatures();
+  // const submission = {cai: [], bsl: []};
+  // features.forEach(feature => {
+  //   const lid = feature.get('lid');
+  //   if (feature.getId().indexOf('cai') > -1) {
+  //     submission.cai.push(lid);
+  //   } else {
+  //     submission.bsl.push(lid);
+  //   }
+  // });
+  // $(form).find('input[name="payload"]').val(JSON.stringify(submission));
+  // form.submit();
 }
 
 function showTable(event) {
@@ -104,11 +106,11 @@ function setFormAction(form) {
   const disableUntil = new Date(import.meta.env.VITE_SUBMIT_DATE).getTime();
   const now = new Date().getTime();
   const enable = now > disableUntil;
-  if (enable) {
+  // if (enable) {
     form.on('submit', handleChallengeSubmission);
-  } else {
-    form.on('submit', displaySubmitMessage);
-  }
+  // } else {
+    // form.on('submit', displaySubmitMessage);
+  // }
 }
 
 export function setDisabled(disabled) {
